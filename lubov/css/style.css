@@ -18,7 +18,16 @@ body {
 }
 
 .header {
-	margin-top: 20px;
+margin-top: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	background-color: var(--gray_1);
+
+}
+
+.scroll {
+	box-shadow: 0px 30px 30px 0px RGB(0,0,0,5%);
 }
 
 .logo {
@@ -40,11 +49,12 @@ body {
 	margin-left: 10px;
 }
 
-.menu-link:hover {
-	color: var(--gray_3);
+.menu-link:hover, .bok-soc:hover, .btn:hover {
+	cursor: pointer;
 	transform: scale(1.03);
 	transition: all 0.3s ease;
 	color: var(--orange);
+	border-color: var(--orange);
 }
 
 .menu-link:first {
@@ -246,7 +256,69 @@ gap: 14px;
 
 .footer{
 	background-color: var(--gray_4);
-	padding: 40px 0;
+	padding: 30px 0;
 	color: var(--white);
 	
+}
+
+.footer .menu-link{
+	color: var(--white);
+	float: left;
+	margin-left: 28px;
+}
+
+.footer .menu-link:hover{
+	color: var(--orange);
+}
+
+.footer ul{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.footer .menu-link:first{
+margin-left: 0;
+}
+
+.footer .logo{
+	color: var(--white);
+}
+
+.footer .logo:hover{
+	color: var(--orange);
+}
+
+.socseti img{
+	width: 40px;
+	margin-left: 14px;
+	color: #FFB178;
+
+}
+
+.socseti img:hover{
+	transform: scale(1.06);
+	transition: all 0.3s ease;
+	cursor: pointer;
+	color: var(--orange);
+
+}
+
+.copy{
+	text-align: center;
+	font-size: 18px;
+	color: #c3bcb9;
+	margin-top: 20px;
+}
+
+ svg {
+  fill: darkgreen;
+}
+
+#recom:before, #sert:before, #cont:before{
+  display: block;
+  content: " ";
+  margin-top: -95px;
+  height: 95px;
+  visibility: hidden;
 }

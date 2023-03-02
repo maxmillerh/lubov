@@ -19,7 +19,7 @@
 	<header class="header">
 
 		<nav class="navbar navbar-expand-lg header-bg">
-			<div class="container d-flex justify-content-between">
+			<div class="container d-flex justify-content-between" style="background-color: #F5F5F7;">
 
 				<a class="navbar-brand logo" href="index.html">Lubov</a>
 
@@ -38,16 +38,16 @@
 							<a class="nav-link menu-link" aria-current="page" href="#about">Услуги</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link menu-link" href="#advantages">Рекомендации</a>
+							<a class="nav-link menu-link" href="#recom">Рекомендации</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link menu-link" href="#reviews">Сертификаты</a>
+							<a class="nav-link menu-link" href="#sert">Сертификаты</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link menu-link" href="#prices">Отзывы</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link menu-link" href="#form">Контакты</a>
+							<a class="nav-link menu-link" href="#cont">Контакты</a>
 						</li>
 					</ul>
 
@@ -64,9 +64,9 @@
 			<div class="main">
 				<div class="soc-main">
 					<hr class="soc-hr">
-					 <span class="p-3">Whatsapp</span>
+					 <span class="p-3 bok-soc">Whatsapp</span>
 					<hr class="soc-hr" style="width: 50px;">
-					<span class="p-3">Вконтакте</span>
+					<span class="p-3 bok-soc">Вконтакте</span>
 					
 				</div>
 				<div class="main-block-text">
@@ -103,7 +103,7 @@
 	<recomend>
 		<div class="container">
 			<div class="recomend">
-				<h3>Рекомендации</h3>
+				<h3 id="recom">Рекомендации</h3>
 				<ul class="menu-recomend">
 					<li class=" m-0">Наращивание ресниц</li>
 					<li class="activete">Шугаринг</li>
@@ -123,7 +123,7 @@
 
 	<sertificat>
 		<div class="container mt-5 ">
-			<h3 style="margin-top: 90px;">Сертификаты</h3>
+			<h3 id="sert" style="margin-top: 90px;">Сертификаты</h3>
 			<div class="sertificat">
 				<div id="carouselExampleIndicators" class="carousel slide">
 					<div class="carousel-indicators">
@@ -166,11 +166,11 @@
 	<div class="shadow-blok mb-5" style="float: right; transform: rotate(180deg); width: 60%; "></div>
 	<contact>
 		<div class="container mb-5 pt-5">
-			<h3 class="mt-5" style="margin-top: 90px;">Контакты</h3>
+			<h3 id="cont" class="mt-5" style="margin-top: 90px;">Контакты</h3>
 			<div class="contact">
 				<div class="row">
 					<div class="col-8">
-						<img src="img/map.png" class="w-100"  alt="">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A445d4c5c83491ca941d116b4a6e3acb29cdc7de23bb0169830c83f56e1cd4926&amp;source=constructor" width="100%" height="500px" frameborder="0"></iframe>
 					</div>
 					<div class="col-4">
 						<p class="cont">8 (900) 533-28-08</p>
@@ -185,33 +185,42 @@
 	</contact>
 
 	<footer class="footer">
-		<div class="container d-flex">
-			<a class="navbar-brand logo" href="index.html">Lubov</a>
+		<div class="container d-flex justify-content-between align-items-center">
+			<a class="navbar-brand logo"  href="index.html">Lubov</a>
 
-			<ul class="navbar-nav spec-position">
+			<ul class="navbar-nav  spec-position " >
 				<li class="nav-item ">
 					<a class="nav-link menu-link" aria-current="page" href="#about">Услуги</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link menu-link" href="#advantages">Рекомендации</a>
+					<a class="nav-link menu-link" href="#recom">Рекомендации</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link menu-link" href="#reviews">Сертификаты</a>
+					<a class="nav-link menu-link" href="#sert">Сертификаты</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link menu-link" href="#prices">Отзывы</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link menu-link" href="#form">Контакты</a>
+					<a class="nav-link menu-link" href="#cont">Контакты</a>
 				</li>
 			</ul>
 
-			Вконтакте
+			<div class="socseti">
+				<img style="width: 44px;" src="img/vk-logo-svgrepo-com.svg" alt="">
+				<img  src="img/whatsapp-svgrepo-com.svg" alt="">
+			</div>
+
+	
 
 		</div>
 
+		<p class="copy">©LUBOV 2023. Все права защищены</p>
+
 	</footer>
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
