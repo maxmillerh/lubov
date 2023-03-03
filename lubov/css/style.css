@@ -186,6 +186,7 @@ h1 {
 	float: left;
 	margin-left: 34px;
 	position: relative;
+	cursor: pointer;
 }
 
 h3{
@@ -232,8 +233,13 @@ gap: 14px;
 	height: 450px;
 }
 
-.sertificat, .contact{
+.sertificat{
 	padding-bottom: 70px;
+
+}
+
+.contact{
+	padding-bottom: 30px;
 
 }
 
@@ -315,10 +321,89 @@ margin-left: 0;
   fill: darkgreen;
 }
 
-#recom:before, #sert:before, #cont:before{
+#recom:before, #sert:before, #cont:before, #uslugi::before, #otzv::before{
   display: block;
   content: " ";
   margin-top: -95px;
   height: 95px;
   visibility: hidden;
+}
+
+.uslugi img{
+	width: 100%;
+
+
+}
+
+.card-text{
+	line-height: 38px;
+	font-size: 38px;
+	color: var(--gray_4) ;
+	margin-bottom: 0;
+}
+
+
+.card-title{
+	font-size: 30px;
+	color: var(--gray_3);
+	margin-top: 26px;
+	margin-bottom: 30px;
+}
+
+.uslugs .card:hover{
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 0.5s ease;
+}
+
+.card .btn{
+padding: 10px 30px;
+font-size: 20px;
+border-color: var(--gray_2);
+color: var(--gray_4);
+}
+
+.card .btn:hover{
+	color: var(--orange);
+	border-color: var(--orange);
+	}
+
+.card{
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 4px 10px 0 RGB(0,0,0,10%);
+}
+
+.otzivs img{
+	border-radius: 50%;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 30px;
+
+}
+
+.name{
+	font-size: 26px;
+	color: var(--gray_5);
+	text-align: center;
+
+}
+
+.otzText{
+		font-size: 20px;
+	color: var(--gray_2);
+	line-height: 26px;
+	text-align: center;
+}
+
+.carousel-indicators{
+	bottom: -58px;
+}
+
+
+.carousel-indicators [data-bs-target]{
+	width: 10px;
+	height: 10px;
+	background-color: #323232;
+	border-radius: 5px;
 }
