@@ -16,7 +16,7 @@
 
 <body>
 
-	<header class="header">
+	<header class="header  ">
 
 		<nav class="navbar navbar-expand-lg header-bg">
 			<div class="container d-flex justify-content-between" style="background-color: #F5F5F7;">
@@ -29,11 +29,11 @@
 					<span class="navbar-toggler-icon"><img src="img/burger.png" width="30px" height="30px" alt=""></span>
 				</button>
 
-				<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+				<div class="collapse navbar-collapse justify-content-between toc js-toc" id="navbarSupportedContent">
 
 					<span></span>
 
-					<ul class="navbar-nav spec-position">
+					<ul class="navbar-nav spec-position js-toc-list">
 						<li class="nav-item ">
 							<a class="nav-link menu-link" aria-current="page" href="#uslugi">Услуги</a>
 						</li>
@@ -51,7 +51,7 @@
 						</li>
 					</ul>
 
-					<button class="btn btn-header">Войти</button>
+					<button class="btn btn-header" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</button>
 
 				</div>
 			</div>
@@ -62,21 +62,25 @@
 	<main>
 		<div class="container">
 			<div class="main">
-				<div class="soc-main">
-					<hr class="soc-hr">
-					 <span class="p-3 bok-soc">Whatsapp</span>
-					<hr class="soc-hr" style="width: 50px;">
-					<span class="p-3 bok-soc">Вконтакте</span>
-					
+				<div class=" parent-soc-main">
+					<div class="soc-main">
+						<hr class="soc-hr">
+						<a class="a-soc" target="_blank" href="https://vk.com/l.biuti83">
+							<span class="p-3 bok-soc">Whatsapp</span>
+						</a>
+						<hr class="soc-hr" style="width: 50px;">
+						<a class="a-soc" target="_blank" href="https://vk.com/l.biuti83">
+							<span class="p-3 bok-soc">Вконтакте</span>
+						</a>
+					</div>
 				</div>
 				<div class="main-block-text">
-					<h1>Мастер по наращиванию <br>
+					<h1 class="element-animation">Мастер по наращиванию <br>
 						ресниц и шугарингу</h1>
-					<h2>При первом посещении скидка <br>
+					<h2 class="element-animation">При первом посещении скидка <br>
 						10% на любую услугу</h2>
-					<button class="btn btn-main">Записаться</button>
-
-					<div class="facts">
+					<a href="#zaya" class="btn btn-main d-inline-block element-animation">Записаться</a>
+					<div class="facts element-animation">
 						<div class="fact fact1">
 							<span>12</span>
 							<p>Сертификатов</p>
@@ -91,264 +95,305 @@
 						</div>
 					</div>
 				</div>
-				<div class="main-img">
-					<img src="img/main-img.png" alt="">
+				<div class="main-img ">
+					<img class="" src="img/main-img.png" alt="">
 				</div>
-
 			</div>
 		</div>
 	</main>
 	<div class="shadow-blok"></div>
 
-	<uslugi class="uslugs">
+	<uslugi class="uslugs ">
 		<div class="container">
-			<h3 id="uslugi">Услуги</h3>
-			<ul class="menu-recomend">
+			<div id="uslugi" class="help1">
+				<h3 class="title-design element-animation">Услуги</h3>
+			</div>
+			<ul class="menu-recomend element-animation">
 				<li id="narash2" class="activete m-0">Наращивание ресниц</li>
-				<li id="shugar2" >Шугаринг</li>
+				<li id="shugar2">Шугаринг</li>
 				<li id="permonen2">Перманентный макияж</li>
 			</ul>
-
-			<div id="uslBlock1" class="row gy-4 mt-4">
+			<div id="uslBlock1 " class="row p-rec gy-4 mt-4 element-animation">
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
 							<img src="img/narash1.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">Классика</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1000р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<h5 class="card-title">Классика</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">1000р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
 							<img src="img/narash2.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">2D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1200р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<h5 class="card-title">2D эффект</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">1200р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
 							<img src="img/narash3.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">3D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1300р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<h5 class="card-title">3D эффект</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">1300р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
 							<img src="img/narash4.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">4D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1400р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<h5 class="card-title">4D эффект</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">1400р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
 							<img src="img/narash5.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">Y эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1300р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<h5 class="card-title">Y эффект</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">1300р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
 							<img src="img/narash6.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">Снятие чужой работы</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">100р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<h5 class="card-title">Снятие чужой работы</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">100р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
+				</div>
+			</div>
+			<div id="uslBlock2" class="row p-rec gy-4 mt-4 d-none">
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<img src="img/sugar1.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Усики</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">100р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<img src="img/sugar2.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Подмышечные впадины</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">200р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<img src="img/sugar3.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Руки до локтя</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">250р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<img src="img/sugar4.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Руки полностью</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">500р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<img src="img/sugar5.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Ноги до колена</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">500р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<img src="img/sugar6.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Ноги полностью</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">900р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="bekene-back"><img src="img/sugar7.png" class="card-img-top bekene" alt="..."></div>
+							<h5 class="card-title">Бикини класика</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">500р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="bekene-back"><img src="img/sugar8.png" class="card-img-top bekene" alt="..."></div>
+							<h5 class="card-title">Бикини глубокое</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">800р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<img src="img/sugar9.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Блеск-тату</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">250р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div id="uslBlock2" class="row gy-4 mt-4 d-none">
+			<div id="uslBlock3" class="row p-rec gy-4 mt-4 d-none">
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
-							<img src="img/sugar1.jpg" class="card-img-top" alt="...">
-						  <h5 class="card-title">Классика 2</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1000р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<img src="img/perm1.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Брови напыление</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">3000р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
-							<img src="img/narash2.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">2D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1200р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<img src="img/perm2.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Брове коррекция</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">2000р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
-							<img src="img/narash3.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">3D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1300р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<img src="img/perm3.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Глаза Напыление</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">3000р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
-							<img src="img/narash4.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">4D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1400р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<img src="img/perm4.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Глаза коррекция</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">2000р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
-							<img src="img/narash5.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">Y эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1300р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<img src="img/perm5.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Губы напыление</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">2000р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
-							<img src="img/narash6.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">Снятие чужой работы</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">100р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<img src="img/perm6.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Губы коррекция</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">2000р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
-				</div>
-			</div>
-
-			<div id="uslBlock3" class="row gy-4 mt-4 d-none">
-				<div class="col-4">
-					<div class="card" >
-						
-						<div class="card-body">
-							<img src="img/perm1.jpg" class="card-img-top" alt="...">
-						  <h5 class="card-title">Классика 3</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1000р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
-						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
-							<img src="img/narash2.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">2D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1200р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<img src="img/perm7.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Микроблейдинг</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">4000р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-4">
-					<div class="card" >
-						
+					<div class="card">
 						<div class="card-body">
-							<img src="img/narash3.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">3D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1300р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
+							<img src="img/perm8.png" class="card-img-top" alt="...">
+							<h5 class="card-title">Микроблейдинг коррекция</h5>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<p class="card-text">2500р</p>
+								<a href="#" class="btn btn-header">Записаться</a>
+							</div>
 						</div>
-					  </div>
-				</div>
-				<div class="col-4">
-					<div class="card" >
-						
-						<div class="card-body">
-							<img src="img/narash4.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">4D эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1400р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
-						</div>
-					  </div>
-				</div>
-				<div class="col-4">
-					<div class="card" >
-						
-						<div class="card-body">
-							<img src="img/narash5.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">Y эффект</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">1300р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
-						</div>
-					  </div>
-				</div>
-				<div class="col-4">
-					<div class="card" >
-						
-						<div class="card-body">
-							<img src="img/narash6.png" class="card-img-top" alt="...">
-						  <h5 class="card-title">Снятие чужой работы</h5>
-						  <div class="d-flex justify-content-between align-items-center mb-4">
-							<p class="card-text">100р</p>
-						  <a href="#" class="btn btn-header">Записаться</a>
-						  </div>
-						</div>
-					  </div>
+					</div>
 				</div>
 			</div>
 
@@ -358,42 +403,80 @@
 	<recomend>
 		<div class="container">
 			<div class="recomend">
-				<h3 id="recom" style="margin-top: 90px;">Рекомендации</h3>
-				<ul class="menu-recomend">
+				<div id="recom" class="help1">
+					<h3 class="title-design element-animation">Рекомендации</h3>
+				</div>
+				<ul class="menu-recomend element-animation">
 					<li id="narash" class="activete m-0">Наращивание ресниц</li>
-					<li id="shugar" >Шугаринг</li>
+					<li id="shugar">Шугаринг</li>
 					<li id="permonen">Перманентный макияж</li>
 				</ul>
 				<div id="recBlock1">
-					<p style="color: #747373;">1 Постпроцедурный уход: </p>
-				<p>48 часов избегать контакта с водой удаляемой обрасти. <br>
-					По истечению 48 часов рекомендуется наносить 2 раза в день специализированный крем, рекомендуемый вашим мастером в течение 7-10 дней для сохранения эластичности кожи и комфортного естественного процесса заживления. 
-					После отхождения корочки рекомендуется применять специализированные крема и мази для профилактики образования    рубцов и шрамов. Использовать только при рекомендации Вашего мастера. <br>
-					Повторные процедуры рекомендуется проводить не ранее, чем через 35-45 дней после проведения первой, учитывая все индивидуальные особенности.  <br>
-					<span class="marker" style="position: relative; z-index: 2; color: 323232;">Исключить:</span>   Нельзя посещать сауны,  солярии (не загорать), бассейны и открытые водоемы, принимать горячие ванны (не распаривать!) в течение всего процесса заживления!  <br>
-					<span class="marker" style="position: relative; z-index: 2">Запрещается:</span> Образовавшиеся “корочки” нельзя сдирать до момента естественного отхождения.</p>
+					<div class="row gy-4 p-rec">
+						<h4 class="element-animation">Запрещается</h4>
+						<div class="col-6 d-flex align-items-center item-itd element-animation">
+							<div class="item-rec d-inline-block ">
+								<img class="item-img" src="img/item1.png" alt="">
+							</div>
+							<span class="rec-text">Нельзя мочить ресницы 24ч после процедуры</span>
+						</div>
+						<div class="col-6 d-flex align-items-center item-itd element-animation">
+							<div class="item-rec d-inline-block">
+								<img class="item-img" src="img/item2.png" alt="">
+							</div>
+							<span class="rec-text">Нельзя посещать сауну, баню, солярий 72ч после процедуры </span>
+						</div>
+						<div class="col-6 d-flex align-items-center item-itd element-animation">
+							<div class="item-rec d-inline-block">
+								<img class="item-img" src="img/item3.png" alt="">
+							</div>
+							<span class="rec-text">Не использовать жирные масла <br> и кремы</span>
+						</div>
+						<div class="col-6 d-flex align-items-center item-itd element-animation">
+							<div class="item-rec d-inline-block">
+								<img class="item-img" src="img/item4.png" alt="">
+							</div>
+							<span class="rec-text">Не использовать тушь</span>
+						</div>
+					</div>
 				</div>
 
 				<div id="recBlock2" class="d-none">
 					<p style="color: #747373;">2 Постпроцедурный уход: </p>
-				<p>48 часов избегать контакта с водой удаляемой обрасти. <br>
-					По истечению 48 часов рекомендуется наносить 2 раза в день специализированный крем, рекомендуемый вашим мастером в течение 7-10 дней для сохранения эластичности кожи и комфортного естественного процесса заживления. 
-					После отхождения корочки рекомендуется применять специализированные крема и мази для профилактики образования    рубцов и шрамов. Использовать только при рекомендации Вашего мастера. <br>
-					Повторные процедуры рекомендуется проводить не ранее, чем через 35-45 дней после проведения первой, учитывая все индивидуальные особенности.  <br>
-					<span class="marker" style="position: relative; z-index: 2; color: 323232;">Исключить:</span>   Нельзя посещать сауны,  солярии (не загорать), бассейны и открытые водоемы, принимать горячие ванны (не распаривать!) в течение всего процесса заживления!  <br>
-					<span class="marker" style="position: relative; z-index: 2">Запрещается:</span> Образовавшиеся “корочки” нельзя сдирать до момента естественного отхождения.</p>
+					<p>48 часов избегать контакта с водой удаляемой обрасти. <br>
+						По истечению 48 часов рекомендуется наносить 2 раза в день специализированный крем, рекомендуемый вашим
+						мастером в течение 7-10 дней для сохранения эластичности кожи и комфортного естественного процесса
+						заживления.
+						После отхождения корочки рекомендуется применять специализированные крема и мази для профилактики
+						образования рубцов и шрамов. Использовать только при рекомендации Вашего мастера. <br>
+						Повторные процедуры рекомендуется проводить не ранее, чем через 35-45 дней после проведения первой, учитывая
+						все индивидуальные особенности. <br>
+						<span class="marker" style="position: relative; z-index: 2; color: 323232;">Исключить:</span> Нельзя
+						посещать сауны, солярии (не загорать), бассейны и открытые водоемы, принимать горячие ванны (не
+						распаривать!) в течение всего процесса заживления! <br>
+						<span class="marker" style="position: relative; z-index: 2">Запрещается:</span> Образовавшиеся “корочки”
+						нельзя сдирать до момента естественного отхождения.
+					</p>
 				</div>
 
 				<div id="recBlock3" class="d-none">
-					<p style="color: #747373;">  3 Постпроцедурный уход: </p>
-				<p>48 часов избегать контакта с водой удаляемой обрасти. <br>
-					По истечению 48 часов рекомендуется наносить 2 раза в день специализированный крем, рекомендуемый вашим мастером в течение 7-10 дней для сохранения эластичности кожи и комфортного естественного процесса заживления. 
-					После отхождения корочки рекомендуется применять специализированные крема и мази для профилактики образования    рубцов и шрамов. Использовать только при рекомендации Вашего мастера. <br>
-					Повторные процедуры рекомендуется проводить не ранее, чем через 35-45 дней после проведения первой, учитывая все индивидуальные особенности.  <br>
-					<span class="marker" style="position: relative; z-index: 2; color: 323232;">Исключить:</span>   Нельзя посещать сауны,  солярии (не загорать), бассейны и открытые водоемы, принимать горячие ванны (не распаривать!) в течение всего процесса заживления!  <br>
-					<span class="marker" style="position: relative; z-index: 2">Запрещается:</span> Образовавшиеся “корочки” нельзя сдирать до момента естественного отхождения.</p>
+					<p style="color: #747373;"> 3 Постпроцедурный уход: </p>
+					<p>48 часов избегать контакта с водой удаляемой обрасти. <br>
+						По истечению 48 часов рекомендуется наносить 2 раза в день специализированный крем, рекомендуемый вашим
+						мастером в течение 7-10 дней для сохранения эластичности кожи и комфортного естественного процесса
+						заживления.
+						После отхождения корочки рекомендуется применять специализированные крема и мази для профилактики
+						образования рубцов и шрамов. Использовать только при рекомендации Вашего мастера. <br>
+						Повторные процедуры рекомендуется проводить не ранее, чем через 35-45 дней после проведения первой, учитывая
+						все индивидуальные особенности. <br>
+						<span class="marker" style="position: relative; z-index: 2; color: 323232;">Исключить:</span> Нельзя
+						посещать сауны, солярии (не загорать), бассейны и открытые водоемы, принимать горячие ванны (не
+						распаривать!) в течение всего процесса заживления! <br>
+						<span class="marker" style="position: relative; z-index: 2">Запрещается:</span> Образовавшиеся “корочки”
+						нельзя сдирать до момента естественного отхождения.
+					</p>
 				</div>
-				
+
 			</div>
 		</div>
 	</recomend>
@@ -401,108 +484,120 @@
 
 	<sertificat>
 		<div class="container mt-5 ">
-			<h3 id="sert" style="margin-top: 90px;">Сертификаты</h3>
+			<div id="sert" class="help1">
+				<h3 class="title-design element-animation">Сертификаты</h3>
+			</div>
 			<div class="sertificat">
-				<div id="carouselExampleIndicators" class="carousel slide">
-					<div class="carousel-indicators">
-					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-					</div>
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
+				<div id="carouselExampleIndicators" class="carousel slide element-animation"">
+					<div class=" carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+						aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+						aria-label="Slide 5"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+						aria-label="Slide 6"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
 						<div class="sertificats w-100">
 							<img class="serf" src="img/1.jpg" alt="">
 							<img class="serf" src="img/2.jpg" alt="">
 						</div>
-					  </div>
-					  <div class="carousel-item">
+					</div>
+					<div class="carousel-item">
 						<div class="sertificats w-100">
 							<img class="serf" src="img/3.jpg" alt="">
 							<img class="serf" src="img/4.jpg" alt="">
 						</div>
-					  </div>
-					  <div class="carousel-item">
+					</div>
+					<div class="carousel-item">
 						<div class="sertificats w-100">
 							<img class="serf" src="img/5.jpg" alt="">
 							<img class="serf" src="img/6.jpg" alt="">
 						</div>
-					  </div>
-					  <div class="carousel-item">
+					</div>
+					<div class="carousel-item">
 						<div class="sertificats w-100">
 							<img class="serf" src="img/7.jpg" alt="">
 							<img class="serf" src="img/8.jpg" alt="">
 						</div>
-					  </div>
-					  <div class="carousel-item">
+					</div>
+					<div class="carousel-item">
 						<div class="sertificats w-100">
 							<img class="serf" src="img/9.jpg" alt="">
 							<img class="serf" src="img/10.jpg" alt="">
 						</div>
-					  </div>
-					  <div class="carousel-item">
+					</div>
+					<div class="carousel-item">
 						<div class="sertificats w-100">
 							<img class="serf" src="img/7.jpg" alt="">
 							<img class="serf" src="img/3.jpg" alt="">
 						</div>
-					  </div>
 					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Next</span>
-					</button>
-				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
+		</div>
 		</div>
 	</sertificat>
 	<div class="shadow-blok mb-5" style="float: right; transform: rotate(180deg); width: 60%; "></div>
 
 	<otzivs class="otzivs">
 		<div class="container">
-			<h3 id="otzv" style="margin-top: 90px;">Отзывы</h3>
-			<div class="row">
+			<div id="otzv" class="help1">
+				<h3 class="title-design element-animation">Отзывы</h3>
+			</div>
+			<div class="row element-animation">
 				<div class="col-3">
-					<div class="card" >
+					<div class="card ">
 						<img src="img/otz1.png" class="card-img-top" alt="...">
 						<div class="card-body">
-						  <p class="name">Валентина Ушакова</p>
-						  <p class="otzText">Супер класс сосиска квас. Всем советую, всем рекомендую 19 раз, с новым годом</p>
+							<p class="name">Валентина Ушакова</p>
+							<p class="otzText">Супер класс сосиска квас. Всем советую, всем рекомендую 19 раз, с новым годом</p>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-3">
-					<div class="card" >
+					<div class="card ">
 						<img src="img/otz2.png" class="card-img-top" alt="...">
 						<div class="card-body">
-						  <p class="name">Валерия Голубева</p>
-						  <p class="otzText">Супер класс сосиска квас. Всем советую, всем рекомендую 19 раз, с новым годом</p>
+							<p class="name">Валерия Голубева</p>
+							<p class="otzText">Супер класс сосиска квас. Всем советую, всем рекомендую 19 раз, с новым годом</p>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-3">
-					<div class="card" >
+					<div class="card ">
 						<img src="img/otz3.png" class="card-img-top" alt="...">
 						<div class="card-body">
-						  <p class="name">Милана Соловьева</p>
-						  <p class="otzText">Супер класс сосиска квас. Всем советую, всем рекомендую 19 раз, с новым годом</p>
+							<p class="name">Милана Соловьева</p>
+							<p class="otzText">Супер класс сосиска квас. Всем советую, всем рекомендую 19 раз, с новым годом</p>
 						</div>
-					  </div>
+					</div>
 				</div>
 				<div class="col-3">
-					<div class="card" >
+					<div class="card ">
 						<img src="img/otz4.png" class="card-img-top" alt="...">
 						<div class="card-body">
-						  <p class="name">Андрей Гусь</p>
-						  <p class="otzText">Супер класс сосиска квас. Всем советую, всем рекомендую 19 раз, с новым годом</p>
+							<p class="name">Андрей Гусь</p>
+							<p class="otzText">Супер класс сосиска квас. Всем советую, всем рекомендую 19 раз, с новым годом</p>
 						</div>
-					  </div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -510,17 +605,23 @@
 
 	<contact>
 		<div class="container mb-5 pt-5">
-			<h3 id="cont" class="mt-5" style="margin-top: 90px;">Контакты</h3>
+			<div id="cont" class="help1">
+				<h3 class="title-design element-animation">Контакты</h3>
+			</div>
 			<div class="contact">
 				<div class="row">
 					<div class="col-8">
-						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A445d4c5c83491ca941d116b4a6e3acb29cdc7de23bb0169830c83f56e1cd4926&amp;source=constructor" width="100%" height="500px" frameborder="0"></iframe>
+						<iframe class="map element-animation"
+							src="https://yandex.ru/map-widget/v1/?um=constructor%3A445d4c5c83491ca941d116b4a6e3acb29cdc7de23bb0169830c83f56e1cd4926&amp;source=constructor"
+							width="100%" height="500px" frameborder="0"></iframe>
 					</div>
-					<div class="col-4">
-						<p class="cont">8 (900) 533-28-08</p>
-						<p class="cont-sup">ПН-СБ С 9:00 до 22:00</p>
-						<p class="cont">Фрязиновская 32, кв 123</p>
-						<p class="cont-sup">4 подъезд 4 этаж</p>
+					<div class="col-4 ">
+						<div class="fon-contact element-animation"">
+							<p class=" cont">8 (900) 533-28-08</p>
+							<p class="cont-sup">ПН-СБ С 9:00 до 22:00</p>
+							<p class="cont">Фрязиновская 32, кв 123</p>
+							<p class="cont-sup">4 подъезд 4 этаж</p>
+						</div>
 					</div>
 
 				</div>
@@ -528,11 +629,38 @@
 		</div>
 	</contact>
 
-	<footer class="footer">
-		<div class="container d-flex justify-content-between align-items-center">
-			<a class="navbar-brand logo"  href="index.html">Lubov</a>
+	<zayavka class="zayavka">
 
-			<ul class="navbar-nav  spec-position " >
+		<div class=" mb-5">
+			<div class="container">
+				<div id="zaya" class="help1">
+					<h3 class="title-design element-animation">Оставить заявку</h3>
+				</div>
+
+				<div class="row teni br-10 element-animation">
+
+					<div class="col-6 br-10 block-zaya ">
+						<input name="name" id="name" type="text" placeholder="Имя">
+						<input name="surname" id="surname" type="text" placeholder="Фамилия">
+						<input name="tel" id="tel" type="tel" placeholder="Номер телефона">
+						<input name="date" id="date" type="date" placeholder="Дата">
+						<input name="time" id="time" type="time" placeholder="Время">
+						<button class="btn btn-header d-block mt-4 btn-zaya">Записаться</button>
+					</div>
+					<div class="col-6 br-10 z-img br-10">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</zayavka>
+
+
+	<footer class="footer">
+		<div class="container d-flex justify-content-between align-items-center ">
+			<a class="navbar-brand logo" href="index.html">Lubov</a>
+
+			<ul class="navbar-nav  spec-position ">
 				<li class="nav-item ">
 					<a class="nav-link menu-link" aria-current="page" href="#uslugi">Услуги</a>
 				</li>
@@ -551,19 +679,86 @@
 			</ul>
 
 			<div class="socseti">
-				<img style="width: 44px;" src="img/vk-logo-svgrepo-com.svg" alt="">
-				<img  src="img/whatsapp-svgrepo-com.svg" alt="">
+				<a class="a-soc" target="_blank" href="https://vk.com/l.biuti83">
+					<img style="width: 44px;" src="img/vk-logo-svgrepo-com.svg" alt="">
+				</a>
+				<a class="a-soc" target="_blank" href="https://vk.com/l.biuti83">
+					<img src="img/whatsapp-svgrepo-com.svg" alt="">
+				</a>
+
+
 			</div>
 
-	
+
 
 		</div>
 
-		<p class="copy">©LUBOV 2023. Все права защищены</p>
+		<p class="copy ">©LUBOV 2023. Все права защищены</p>
 
 	</footer>
 
 
+
+
+	<!-- Modal-login -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<img src="img/login.png" alt="">
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title  " id="exampleModalLabel">Вход</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<!--<label id="name-lab" for="name">Имя</label> -->
+					<input name="tel" id="tel" type="tel" placeholder="Номер телефона">
+					<input name="pass" id="pass" type="password" placeholder="Пароль" pattern="2[0-9]{3}-[0-9]{3}" required>
+				</div>
+				<div class="modal-footer justify-content-between ">
+					<div class="">
+						<span>Нет аккаунта?</span>
+						<span class="reg-link" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-dismiss="modal"
+							aria-label="Close">Создать</span>
+					</div>
+					<button type="button" class="btn btn-header">Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal-registr -->
+	<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+		<div class="modal-dialog">
+			<img src="img/registr.png" alt="">
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title  " id="exampleModalLabel">Создать аккаунт</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<!--<label id="name-lab" for="name">Имя</label> -->
+					<input name="name" id="name" type="text" placeholder="Имя">
+					<input name="surname" id="surname" type="text" placeholder="Фамилия">
+					<input name="tel" id="tel" type="tel" placeholder="Номер телефона">
+					<input name="pass" id="pass" type="password" placeholder="Пароль" pattern="2[0-9]{3}-[0-9]{3}" required>
+				</div>
+				<div class="modal-footer justify-content-between ">
+					<div class="">
+						<span>Есть аккаунт?</span>
+						<span class="reg-link" data-bs-toggle="modal" data-bs-target="#exampleModal " data-bs-dismiss="modal"
+							aria-label="Close">Войти</span>
+					</div>
+					<button type="button" class="btn btn-header">Создать</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="skroll.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
