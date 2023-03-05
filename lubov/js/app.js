@@ -1,3 +1,4 @@
+
 /* тень для шапки */
 
 $(window).scroll(function() {
@@ -112,15 +113,16 @@ ready(() => {
   
 });
 
+
 /* смена блоков */
 
 var narash = document.getElementById('narash');
 var shugar = document.getElementById('shugar');
 var permonen = document.getElementById('permonen');
 
-var narash2 = document.getElementById('narash2');
-var shugar2 = document.getElementById('shugar2');
-var permonen2 = document.getElementById('permonen2');
+var narashivanie_usluga = document.getElementById('narashivanie_usluga');
+var shugaring_uslua = document.getElementById('shugaring_uslua');
+var permonentnyi_usluga = document.getElementById('permonentnyi_usluga');
 
 var recBlock1 = document.getElementById('recBlock1');
 var recBlock2 = document.getElementById('recBlock2');
@@ -166,35 +168,34 @@ permonen.onclick = function(){
 // второе
 
 
-narash2.onclick = function(){
+narashivanie_usluga.onclick = function(){
   uslBlock1.classList.remove('d-none');
   uslBlock2.classList.add('d-none');
   uslBlock3.classList.add('d-none');
 
-  narash2.classList.add('activete');
-  shugar2.classList.remove('activete');
-  permonen2.classList.remove('activete');
+  narashivanie_usluga.classList.add('activete');
+  shugaring_uslua.classList.remove('activete');
+  permonentnyi_usluga.classList.remove('activete');
 
 }
 
-shugar2.onclick = function(){
+shugaring_uslua.onclick = function(){
   uslBlock1.classList.add('d-none');
   uslBlock2.classList.remove('d-none');
   uslBlock3.classList.add('d-none');
 
-  narash2.classList.remove('activete');
-  shugar2.classList.add('activete');
-  permonen2.classList.remove('activete');
+  narashivanie_usluga.classList.remove('activete');
+  shugaring_uslua.classList.add('activete');
+  permonentnyi_usluga.classList.remove('activete');
 }
 
-permonen2.onclick = function(){
+permonentnyi_usluga.onclick = function(){
   uslBlock1.classList.add('d-none');
   uslBlock2.classList.add('d-none');
   uslBlock3.classList.remove('d-none');
 
-  narash2.classList.remove('activete');
-  shugar2.classList.remove('activete');
-  permonen2.classList.add('activete');
+  narashivanie_usluga.classList.remove('activete');
+  shugaring_uslua.classList.remove('activete');
+  permonentnyi_usluga.classList.add('activete');
 
 }
-

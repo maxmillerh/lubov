@@ -372,6 +372,10 @@ svg {
 	visibility: hidden;
 }
 
+/* .uslugs h3{
+	top: -30px;
+} */
+
 .a-soc{
 	text-decoration: none;
 }
@@ -609,7 +613,10 @@ input:focus {
 }
 
 .p-rec{
-	padding: 40px 50px;
+	padding: 0px 50px 40px 50px;
+}
+.p-rec2{
+	padding-top:50px ;
 }
 
 .item-itd{
